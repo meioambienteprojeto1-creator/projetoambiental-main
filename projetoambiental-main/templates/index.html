@@ -15,7 +15,7 @@
    <div class="Conteudo_Container">
     <h2 class="Conteudo_Titulo">Conteúdos ambientais</h2>
 
-    {% for campanha in campanhas %}
+    {% for campanha in campanhas[:3] %}
     <div class="Conteudo_Campanha_Geral">
         <div class="Conteudo_Data">
             <a href="{{ url_for('descricao', id=campanha.id) }}">{{ campanha.titulo }}</a>
